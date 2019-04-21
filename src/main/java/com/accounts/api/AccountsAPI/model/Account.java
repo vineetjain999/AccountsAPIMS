@@ -6,17 +6,23 @@ import javax.validation.constraints.Size;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 @Document
+@ApiModel(description="All Account Specific information.")
 public class Account {
 
 	@Id
 	private String id;
 	
 	@Min(value=10)
+	@ApiModelProperty(notes= "Account Opening Balance should be more than 10 GBP")
 	private Double accountBalance;
 	private String accountType;
 	
 	@Size(min=3)
+	@ApiModelProperty(notes= "Custopmer Account Name Should have at least 3 Characters.")
 	private String customerName;
 	
 	public String getCustomerName() {
