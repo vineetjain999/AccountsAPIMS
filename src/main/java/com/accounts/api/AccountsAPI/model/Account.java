@@ -22,7 +22,7 @@ public class Account {
 	private String accountType;
 	
 	@Size(min=3)
-	@ApiModelProperty(notes= "Custopmer Account Name Should have at least 3 Characters.")
+	@ApiModelProperty(notes= "Customer Account Name Should have at least 3 Characters.")
 	private String customerName;
 	
 	public String getCustomerName() {
