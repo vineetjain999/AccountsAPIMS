@@ -1,0 +1,19 @@
+{
+	"offeredPropositions": [{
+			"url": "/halifax/propositions/TEST01.json",
+			"env": [
+				"TEST",
+				"LUAT",
+				"PROD"
+			]
+		},
+		{
+			"url": "/halifax/propositions/TEST02.json",
+			"env": [
+				"TEST",
+				"LUAT",
+				"PROD"
+			]
+		}
+	]
+}

@@ -38,7 +38,7 @@ import io.swagger.annotations.ApiResponses;
 public class AccountsController {
 
 	@Autowired
-	AccountRepository accountRepository;
+	AccountRepository accountRepository; 
 
 	@ApiOperation(value = "Get Details of All Account.", notes = "Get All Accounts", response = Iterable.class, tags = {
 			"Accounts Information" })
@@ -49,6 +49,7 @@ public class AccountsController {
 	@GetMapping
 	public Iterable<Account> accounts() {
 		return accountRepository.findAll();
+		
 	}
 
 	@ApiOperation(value = "Create An Account.", notes = "Create An Account", response = Account.class, tags = {

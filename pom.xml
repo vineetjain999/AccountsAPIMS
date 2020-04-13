@@ -65,7 +65,11 @@
 				<artifactId>dockerfile-maven-plugin</artifactId>
 				<version>1.4.9</version>
 				<configuration>
-					<repository>${docker.image.prefix}/accountsapi</repository>
+				 	<serverId>docker-hub</serverId>
+      				<!-- <registryUrl>https://index.docker.io/v1/</registryUrl> -->
+					<repository>docker-hub/${docker.image.prefix}/accountsapi</repository>
+					<tag>latest</tag>
+					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
 			</plugin>
 			<plugin>

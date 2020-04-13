@@ -1,0 +1,4 @@
+{
+	"name": "MyBank-TestProp5000",
+	"version": "Test02"
+}
